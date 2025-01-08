@@ -1,8 +1,9 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
-.grid-container{
+
+.grid-container {
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 10px;
@@ -10,7 +11,8 @@ body{
     padding: 5%;
     border-radius: 30px;
 }
-.grid-item{
+
+.grid-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,10 +22,12 @@ body{
     background-color: #eeebfc;
     padding-bottom: 10px;
 }
-img{
+
+img {
     max-width: 100%;
     border-radius: 10px;
 }
+
 button {
     padding: 10px 20px;
     font-size: 16px;
@@ -32,8 +36,43 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
+}
 
 button:hover {
     background-color: #a9f70f;
-  }
+}
+
+.album-container {
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.photo-card {
+    position: relative;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #ddd;
+}
+
+.album-title {
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    background-color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.album-title:hover {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
