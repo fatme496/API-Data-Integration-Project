@@ -2,12 +2,6 @@ body{
     margin: 0;
     padding: 0;
 }
-/**.flex-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 500px;
-}*/
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -17,10 +11,29 @@ body{
     border-radius: 30px;
 }
 .grid-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border: 1px solid white;
     border-radius: 10px;
     background-color: #eeebfc;
+    padding-bottom: 10px;
 }
 img{
-    max-width: 100px;
+    max-width: 100%;
+    border-radius: 10px;
 }
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #93b84e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+button:hover {
+    background-color: #a9f70f;
+  }
